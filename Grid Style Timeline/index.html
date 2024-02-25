@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Style Timeline</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box-section">
+        <div class="container">
+            <ul class="box-container">
+                <li>
+                    <div>
+                        <div>
+                            <div>1</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>2</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>3</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>5</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>6</div>
+                            <div>6</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>7</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>8</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>9</div>
+                            <div>9</div>
+                            <div>9</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>10</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>11</div>
+                            <div>11</div>
+                            <div>11</div>
+                            <div>11</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>12</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>13</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>14</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>15</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>16</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>17</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div>
+                            <div>18</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var count = $(".box-container").find("li").length;
+        var x = 3;
+        var y = count % x;
+        if (y == 1) {
+            $(".box-container").append(
+                '<li class="before-none"><div></div></li> <li class="before-none"><div></div></li>'
+            );
+        }
+        if (y == 2) {
+            $(".box-container").append('<li class="before-none"><div></div></li>');
+        }
+
+    </script>
+</body>
+
+</html>
